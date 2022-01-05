@@ -118,3 +118,5 @@ print("buy counter: ", buy_counter)
 
 git_try = 0
 git_try += 1
+
+git_dev = 0
