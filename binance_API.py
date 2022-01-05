@@ -115,3 +115,5 @@ for candle in candles:
         
 print("buy counter: ", buy_counter)
 '''
+
+git_try = 0
