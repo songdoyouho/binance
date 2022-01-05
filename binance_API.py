@@ -121,3 +121,4 @@ git_try += 1
 
 git_main = 0
 git_dev = 0
+git_dev = 1
