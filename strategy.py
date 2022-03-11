@@ -94,7 +94,7 @@ for interval in day_interval:
             #print("get ", float(my_USDT), " USDT")
             last_USDT = my_USDT
 
-            my_USDT_list.append(my_USDT)
+            my_USDT_list.append(math.log(my_USDT))
 
         else:
             day_counter = day_counter + 1
@@ -107,7 +107,7 @@ for interval in day_interval:
 
     reward_avg = sum(all_reward_percentages) / len(all_reward_percentages)
     reward_stdev = statistics.stdev(all_reward_percentages)
-    sharp_ratio = ((reward_avg - 0.02 * interval) / reward_stdev) * math.sqrt(365)
+    sharp_ratio = ((reward_avg) / reward_stdev) * math.sqrt(365)
     all_sharp_ratio.append(sharp_ratio)
     print("reward_avg: ", reward_avg)
     print("reward_stdev: ", reward_stdev)

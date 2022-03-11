@@ -93,4 +93,3 @@ candles = old_candles + new_candles
 with open('BTC_USDT_1MINUTE_SINCE_2017.json', 'w') as w:
     json.dump(candles, w)
 '''
-
